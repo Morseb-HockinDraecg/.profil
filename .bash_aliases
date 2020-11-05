@@ -1,0 +1,5 @@
+alias prog='cd ~/../../mnt/c/Users/Morseb/prog'
+alias gccc='gcc -Wall -Wextra -Werror main.c '
+alias lib='/home/smorel/libft/libft.a'
+alias gccl='gccc lib'
+alias norminette='~/.norminette/norminette.rb'
