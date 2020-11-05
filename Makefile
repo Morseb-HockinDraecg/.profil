@@ -1,14 +1,16 @@
 FILES = .bash_aliases \
-	.bash_function.sh \
+	.bash_functions.sh \
 	.bash_theme \
 	.bashrc \
 	.profile \
 	.vim\
 	.vimrc \
 	.zshrc
+OBJS = ../$(FILES)
 
-all :
-	        cp -f $(FILES) ~/.
-		source ~/.bashrc
+all : copy
+	. ~/.bashrc
+copy :
+	cp -rf $(FILES) ~/.
 clean :
-	        rm -rf ../$(FILES)
+	rm -rf $(OBJS)
