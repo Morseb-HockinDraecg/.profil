@@ -6,7 +6,15 @@ FILES = .bash_aliases \
 	.vim\
 	.vimrc \
 	.zshrc
-OBJS = ../$(FILES)
+
+OBJS = ~/.bash_aliases \
+	~/.bash_functions.sh \
+	~/.bash_theme \
+	~/.bashrc \
+	~/.profile \
+	~/.vim\
+	~/.vimrc \
+	~/.zshrc
 
 all : copy
 	. ~/.bashrc
