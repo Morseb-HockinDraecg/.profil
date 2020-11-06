@@ -1,4 +1,4 @@
-alias prog='cd ~/../../mnt/c/Users/Morseb/prog'
+alias prog='cd /mnt/c/Users/morse/OneDrive/prog'
 alias gccc='gcc -Wall -Wextra -Werror main.c '
 alias lib='/home/smorel/libft/libft.a'
 alias gccl='gccc lib'

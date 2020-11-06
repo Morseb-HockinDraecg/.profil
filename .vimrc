@@ -10,7 +10,7 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 
-set colorcolumn=80
+set colorcolumn=81
 highlight ColorColumn ctermbg=darkgreen guibg=darkgreen
 
 "Auto indent *.c

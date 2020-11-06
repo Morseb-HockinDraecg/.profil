@@ -1,6 +1,6 @@
 FILES = .bash_aliases \
 	.bash_functions.sh \
-	.bash_theme \
+	.bash_PS1 \
 	.bashrc \
 	.profile \
 	.vim\
@@ -9,7 +9,7 @@ FILES = .bash_aliases \
 
 OBJS = ~/.bash_aliases \
 	~/.bash_functions.sh \
-	~/.bash_theme \
+	~/.bash_PS1 \
 	~/.bashrc \
 	~/.profile \
 	~/.vim\
