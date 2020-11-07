@@ -22,6 +22,6 @@ copy :
 	cp -rf $(FILES) ~/.
 clean :
 	rm -rf $(OBJS)
-clean git :
+delgit :
 	rm -rf ../.profil
-fclean : clean clean git
+fclean : clean delgit
