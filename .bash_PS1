@@ -7,10 +7,10 @@ echo -ne "\033]0;`hostname -s`:`pwd`\007"
 #1st line =  H + date + files nb + directory
 #2nd line = user + $ || green if cmd ok, red if not
 PS1="\`if [[ \$? = "0" ]]; then 
-echo \[\e[90m\]\\(\[\e[93m\]\\@\[\e[90m\]\\)-\(\[\e[93m\]\\d\[\e[90m\]\\)-\(\[\e[94m\]\\$(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') files\[\e[90m\]\\)-[\[\e[94m\]\\w\[\e[90m\]]
+echo \[\e[90m\]\\(\[\e[93m\]\\@\[\e[90m\]\\)-\(\[\e[93m\]\\d\[\e[90m\]\\)-\(\[\e[94m\]\ \$(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') files\[\e[90m\]\\)-[\[\e[94m\]\\w\[\e[90m\]]
 echo \[\e[90m\]\\(\[\e[92m\]\u\[\e[90m\]\\)-\(\[\e[92m\]\\$\[\e[90m\]\)-\> \[\e[0m\] ;
 else
-echo \[\e[90m\]\\(\[\e[93m\]\\@\[\e[90m\]\\)-\(\[\e[93m\]\\d\[\e[90m\]\\)-\(\[\e[94m\]\\$(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') files\[\e[90m\]\\)-[\[\e[94m\]\\w\[\e[90m\]]
+echo \[\e[90m\]\\(\[\e[93m\]\\@\[\e[90m\]\\)-\(\[\e[93m\]\\d\[\e[90m\]\\)-\(\[\e[94m\]\ \$(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') files\[\e[90m\]\\)-[\[\e[94m\]\\w\[\e[90m\]]
 echo \[\e[90m\]\\(\[\e[91m\]\u\[\e[90m\]\\)-\(\[\e[91m\]\\$\[\e[90m\]\)-\> \[\e[0m\] ;fi\`"
 
 
